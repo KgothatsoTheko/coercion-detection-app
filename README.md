@@ -1,6 +1,7 @@
 # 🛡️ Coercion Detection Banking Prototype
 
-[![Live Site](https://img.shields.io/badge/Live%20Site-coercion-app.web.app-blue?style=for-the-badge)](https://coercion-app.web.app/)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-coercion--app.web.app-1976d2?style=for-the-badge&logo=google-chrome&logoColor=white)](https://coercion-app.web.app/)
+
 
 This is a **frontend Angular prototype** for detecting signs of coercion during digital banking interactions using:
 
