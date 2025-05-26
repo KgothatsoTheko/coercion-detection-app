@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; scroll-behavior: smooth;}
+body { margin: 0;  
+--primary-bg-color: #2a2a2a;
+--primary-card-color: #2e2f34;
+--primary-text-color: #ffff;
+&.light {
+    --primary-bg-color: #ffff;
+--primary-card-color: #fff;
+--primary-text-color: #2a2a2a;
+}
+}

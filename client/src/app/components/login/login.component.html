@@ -1,0 +1,34 @@
+<div class="container">
+  <h2 class="center-text">💳 Coercion Detection Prototype</h2>
+
+  <div class="balance-display">
+    Current Balance: <strong>R {{ balance }}</strong>
+  </div>
+
+  <h3 class="no-margin">Typing Behaviour Form:</h3>
+  <form (submit)="onSubmit($event)" class="form">
+    <input type="password" placeholder="Enter password" (keydown)="trackKeystroke($event)" required>
+    <button type="submit">Submit Typing</button>
+  </form>
+
+
+  <div class="camera-container" *ngIf="cameraActive">
+  <video #video width="300" height="225" class="camera-feed"></video>
+  <canvas #canvas width="300" height="225" class="camera-canvas"></canvas>
+</div>
+  <h3 class="no-margin">Gesture Detection:</h3>
+<div class="flex center-center cam column gap-1em">
+  <button (click)="startCamera()">Start Gesture Detection</button>
+  <button (click)="stopCamera()" *ngIf="cameraActive">Stop Camera</button>
+</div>
+
+<h3>🧬 Fingerprint / Heart Rate Simulation:</h3>
+<div class="fingerprint-section">
+    <button (click)="onFingerprint($event)" class="fingerprint-button" aria-label="Fingerprint Scan">
+      <span class="material-symbols-outlined">fingerprint</span>
+    </button>
+  </div>
+
+
+  <app-alert *ngIf="anomalyDetected" [message]="'🚨 Suspicious behavior detected!'"></app-alert>
+</div>
