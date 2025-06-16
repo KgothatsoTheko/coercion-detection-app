@@ -6,7 +6,7 @@
 This is a **frontend Angular prototype** for detecting signs of coercion during digital banking interactions using:
 
 - **Typing behavior analysis**
-- **Simulated heart rate**
+- **Real-time heart rate detection**
 - **Live camera-based hand gesture detection**
 
 Suspicious behavior such as fast typing, elevated heart rate, or predefined gestures (e.g., raised fingers) will **deduct R100 from the account balance** and show an alert — simulating a security response under duress.
@@ -19,7 +19,7 @@ Suspicious behavior such as fast typing, elevated heart rate, or predefined gest
   - Captures average keystroke interval
   - Detects unusually fast typing
 
-- ✅ **Heart Rate Simulation**
+- ✅ **Heart Rate Real-time detection**
   - Randomly simulates elevated heart rates
   - Flags values above 135 bpm
 
